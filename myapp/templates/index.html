@@ -1,13 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>this is text page </title>
-</head>
-<body>
-    <h1>hi friend </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, officia explicabo? {{keyword}}
-    </p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+
+
+{% block body%}
+{% load static %}
+<div class="container" style="padding: 20px 0;">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="">
+            <div class="carousel-item active">
+                <img src="{% static 'p1.jpg'%}" class="d-block w-100" alt="..." height="500px" width="1000px">
+            </div>
+            <div class="carousel-item">
+                <img src="{%  static 'p2.jpg'%}" class="d-block w-100" alt="..." height="500px" width="1000px">
+            </div>
+            <div class="carousel-item">
+                <img src="{%  static 'p3.jpg'%}" class="d-block w-100" alt="..." height="500px" width="1000px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container-card">
+    <div class="card-rows">
+        <div class="card">
+            <div class="image"><img src="{% static 'card1.jpg' %}" alt="" ></div>
+            <span class="title">Cool Chair</span>
+            <span class="price">$100</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="{% static 'card2.jpg' %}" alt="" ></div>
+            <span class="title">Cool Chair</span>
+            <span class="price">$100</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="{% static 'card3.jpg' %}" alt=""></div>
+            <span class="title">Cool Chair</span>
+            <span class="price">$100</span>
+        </div>
+
+
+    </div>
+
+    <div class="card-rows">
+        <div class="card">
+            <div class="image"><img src="{% static 'card1.jpg' %}" alt=""></div>
+            <span class="title">Cool Chair</span>
+            <span class="price">$100</span>
+        </div>
+    
+        <div class="card">
+            <div class="image"><img src="{% static 'card2.jpg' %}" alt=""></div>
+            <span class="title">Cool Chair</span>
+            <span class="price">$100</span>
+        </div>
+    
+        <div class="card">
+            <div class="image"><img src="{% static 'card3.jpg' %}" alt=""></div>
+            <span class="title">Cool Chair</span>
+            <span class="price">$100</span>
+        </div>
+</div>
+
+<div class="card-rows">
+    <div class="card">
+        <div class="image"><img src="{% static 'card1.jpg' %}" alt=""></div>
+        <span class="title">Cool Chair</span>
+        <span class="price">$100</span>
+    </div>
+
+    <div class="card">
+        <div class="image"><img src="{% static 'card2.jpg' %}" alt=""></div>
+        <span class="title">Cool Chair</span>
+        <span class="price">$100</span>
+    </div>
+
+    <div class="card">
+        <div class="image"><img src="{% static 'card3.jpg' %}" alt=""></div>
+        <span class="title">Cool Chair</span>
+        <span class="price">$100</span>
+    </div>
+
+
+
+
+{% endblock body%}
