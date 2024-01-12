@@ -3,11 +3,11 @@ from django.urls import path,include
 from home import views
 
 urlpatterns = [
-    path('',views.index,name='home'),
-    path("about",views.about,name='about'),
-    path("services", views.services, name='services'),
-    path("contact", views.contact, name='contact'),
-    path("product", views.product, name='product'),
+    path('https://chethan814.github.io/First-Django-project/',views.index,name='home'),
+    path("https://chethan814.github.io/First-Django-project/about",views.about,name='about'),
+    path("https://chethan814.github.io/First-Django-project/services", views.services, name='services'),
+    path("https://chethan814.github.io/First-Django-project/contact", views.contact, name='contact'),
+    path("https://chethan814.github.io/First-Django-project/product", views.product, name='product'),
 
 
 ]
