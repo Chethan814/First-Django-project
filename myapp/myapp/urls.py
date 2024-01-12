@@ -23,5 +23,5 @@ admin.site.index_title = "Welcome to Phone shop Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('home.urls'))
+    path('https://chethan814.github.io/First-Django-project/',include('home.urls'))
 ]
