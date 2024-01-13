@@ -7,7 +7,7 @@
 
 Setting up the Phone Shop Django project is straightforward. Follow the steps below to get started:
 
-
+```
 ### 1. Clone the Repository
 
 First, clone the project repository to your local machine using the following command in your terminal or command prompt:
@@ -39,7 +39,8 @@ python manage.py createsuperuser
 
 python manage.py runserver
 
-```bash
+```
+
 
 The Phone Shop website should now be accessible at http://localhost:8000/. To access the admin interface, go to http://localhost:8000/admin/ and log in with the superuser credentials.
 
