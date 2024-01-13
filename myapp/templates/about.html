@@ -1,5 +1,39 @@
 {% extends 'base.html' %}
 
-{% block title %} about  {% endblock title %}
+{% load static %}
 
-{% block body%} this is my about block  {% endblock body%}
+{% block title %} about {% endblock title %}
+
+{% block style %}{% static 'about.css' %}{% endblock style %}
+
+{% block body%}
+{%load static%}
+<main>
+    <section>
+        <div><img src="https://source.unsplash.com/100x100/?sea," alt="" width="100px" height="100px"></div>
+        <div>
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit quam ac justo commodo, eu ultricies
+                massa sodales. Vestibulum id ultricies elit, at hendrerit ipsum.</p>
+        </div>
+    </section>
+
+    <section>
+        <div><img src="https://source.unsplash.com/100x100/?nature," alt="" width="100px" height="100px"></div>
+        <div>
+            <h2>Our Mission</h2>
+            <p>Nulla facilisi. Sed ut sapien sit amet nisi tempus fermentum. Phasellus quis sapien vel arcu consequat
+                elementum ut ac diam. Sed auctor quam eget dui scelerisque, in eleifend dolor scelerisque.</p>
+        </div>
+    </section>
+
+    <section>
+        <div><img src="https://source.unsplash.com/100x100/?stars," alt="" width="100px" height="100px"></div>
+        <div>
+            <h2>Meet the Team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non sem in augue convallis sodales.</p>
+            
+        </div>
+    </section>
+</main>
+{% endblock body%}
