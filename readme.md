@@ -39,6 +39,8 @@ python manage.py createsuperuser
 
 python manage.py runserver
 
+```bash
+
 The Phone Shop website should now be accessible at http://localhost:8000/. To access the admin interface, go to http://localhost:8000/admin/ and log in with the superuser credentials.
 
 ## Usage
