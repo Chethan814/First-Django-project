@@ -7,7 +7,7 @@
 
 Setting up the Phone Shop Django project is straightforward. Follow the steps below to get started:
 
-```bash
+
 ### 1. Clone the Repository
 
 First, clone the project repository to your local machine using the following command in your terminal or command prompt:
