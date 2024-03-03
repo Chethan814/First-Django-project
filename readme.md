@@ -1,7 +1,6 @@
 # Phone Shop Django Project
 
-![Phone Shop]
-<img src="/img_for_readme/Phoneshop.png">
+[Phone Shop] (<img src="/img_for_readme/Phoneshop.png">)
 
 ## Setup
 
